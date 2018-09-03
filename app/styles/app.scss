@@ -1,0 +1,23 @@
+@import 'partials/palette';
+
+$icon-size: 28px;
+.sociallinks {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: .75rem;
+  font-size: 0;
+
+  a {
+    display: inline-block;
+    height: $icon-size;
+    line-height: $icon-size;
+    width: $icon-size;
+    margin: .25rem;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+}

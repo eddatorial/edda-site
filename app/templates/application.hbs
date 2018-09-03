@@ -1,0 +1,43 @@
+<div class="ui grid container">
+  <div class="four wide column">
+    <div class="ui secondary vertical menu">
+      {{#link-to 'about' classNames='item'}}
+      About
+      {{/link-to}}
+
+      {{#link-to 'tickets' classNames='item'}}
+      Tickets &amp; Tour Dates
+      {{/link-to}}
+
+      {{#link-to 'listen' classNames='item'}}
+      Listen
+      {{/link-to}}
+
+      {{#link-to 'merch' classNames='item'}}
+      Merch
+      {{/link-to}}
+
+      {{#link-to 'contact' classNames='item'}}
+      Contact
+      {{/link-to}}
+    </div>
+  </div>
+
+  <div class="twelve wide column">
+    {{outlet}}
+  </div>
+</div>
+
+<div class="sociallinks">
+  <a href="#" target='_blank'>
+    <i class="fa fa-twitter"></i>
+  </a>
+
+  <a href="#" target='_blank'>
+    <i class="fa fa-youtube"></i>
+  </a>
+
+  <a href="#" target='_blank'>
+    <i class="fa fa-instagram"></i>
+  </a>
+</div>
