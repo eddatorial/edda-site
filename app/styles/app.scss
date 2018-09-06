@@ -1,6 +1,14 @@
 @import 'partials/palette';
-
+$logo-height: 100px;
 $icon-size: 28px;
+
+body,
+h1, h2, h3, h4, h5,
+.ui.button,
+.ui.menu {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .sociallinks {
   position: absolute;
   bottom: 0;
@@ -19,5 +27,56 @@ $icon-size: 28px;
     color: white;
     text-align: center;
     font-size: 1.25rem;
+  }
+}
+
+.logo-wrapper {
+  display: block;
+  margin-top: 1rem;
+
+  .image {
+    height: $logo-height;
+  }
+}
+
+.page-content {
+  margin-top: calc(#{$logo-height} + 1rem);
+}
+
+.bodycopy {
+  margin-bottom: 2rem;
+}
+
+.contacts {
+  .item {
+    display: block;
+    height: 40px;
+
+    .avatar {
+      white-space: nowrap;
+    }
+  }
+}
+
+.contact-item {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: $charcoal;
+
+  &:hover {
+    color: $grey;
+  }
+}
+
+.contact-content {
+  flex: 1;
+  text-align: right;
+}
+
+.contact-label {
+
+  i {
+    margin-right: .5rem;
   }
 }

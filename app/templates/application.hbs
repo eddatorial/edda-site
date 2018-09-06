@@ -1,5 +1,9 @@
 <div class="ui grid container">
   <div class="four wide column">
+    {{#link-to 'index' classNames='logo-wrapper'}}
+      <img class="logo ui image" src="Artboard 1Rose_logo.svg">
+    {{/link-to}}
+
     <div class="ui secondary vertical menu">
       {{#link-to 'about' classNames='item'}}
       About
@@ -13,9 +17,9 @@
       Listen
       {{/link-to}}
 
-      {{#link-to 'merch' classNames='item'}}
-      Merch
-      {{/link-to}}
+      <a href="#" class='item' target='_blank'>
+        Merch
+      </a>
 
       {{#link-to 'contact' classNames='item'}}
       Contact
@@ -24,7 +28,9 @@
   </div>
 
   <div class="twelve wide column">
-    {{outlet}}
+    <div class="page-content">
+      {{outlet}}
+    </div>
   </div>
 </div>
 
